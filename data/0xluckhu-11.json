@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "0xluckhu",
+  "risk": "2",
+  "title": "Incorrect Scale (1e28) Removed from The maximumWithdrawable in asD::withdrawCarry()",
+  "issueId": 11,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/11"
+}
