@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "0xbrett8571",
+  "risk": "3",
+  "title": "Unchecked division in LinearBondingCurve's `getFee()` allows `1e17` return when divisor is 0, impacting fees.",
+  "issueId": 40,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/40"
+}
