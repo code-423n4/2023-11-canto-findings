@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "Zims",
+  "risk": "2",
+  "title": "`function getPriceAndFee` can be DOS attacked",
+  "issueId": 8,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/8"
+}
