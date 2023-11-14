@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "0xmystery",
+  "risk": "2",
+  "title": "Potential Risk in `withdrawCarry` Function Due to Unaccounted Exchange Rate Decrease",
+  "issueId": 26,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/26"
+}
