@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "firmanregar",
+  "risk": "2",
+  "title": "Performing division before multiplication in Function Market._splitFees(uint256,uint256,uint256)",
+  "issueId": 19,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/19"
+}
