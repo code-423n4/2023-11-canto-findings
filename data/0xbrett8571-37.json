@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "0xbrett8571",
+  "risk": "3",
+  "title": "Lack of Balance Validation in `mintNFT` Enables \"Free Minting\".",
+  "issueId": 37,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/37"
+}
