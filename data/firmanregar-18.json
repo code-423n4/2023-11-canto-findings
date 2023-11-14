@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "firmanregar",
+  "risk": "2",
+  "title": "Unused return value in Function Market.constructor(string,address)",
+  "issueId": 18,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/18"
+}
