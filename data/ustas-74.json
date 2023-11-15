@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "ustas",
+  "risk": "3",
+  "title": "Wrong assumption about the `cNOTE` scale is equal to `1e28` breaks `asD.withdrawCarry()`",
+  "issueId": 74,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/74"
+}
