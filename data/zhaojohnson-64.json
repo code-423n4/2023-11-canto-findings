@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "zhaojohnson",
+  "risk": "2",
+  "title": "Possible withdraw failure in ASD because of mint CToken round-down in lending market clm",
+  "issueId": 64,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/64"
+}
