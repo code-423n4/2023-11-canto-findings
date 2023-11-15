@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "mobinpou",
+  "risk": "2",
+  "title": "Gas Issue in getPriceAndFee Function due to Unchecked uint256 Overflow in LinearBondingCurve.sol",
+  "issueId": 54,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/54"
+}
