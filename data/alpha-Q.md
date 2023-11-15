@@ -1,4 +1,4 @@
-1. Custom errors should be added to explicitly expose errors, facilitating issue identification
+Custom errors should be added to explicitly expose errors, facilitating issue identification
 ```
 1155tech-contracts/src/Market.sol
 function getBuyPrice(
