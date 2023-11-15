@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "debo",
+  "risk": "2",
+  "title": "[M-01] Incorrect shift assembly in the LinearBondingCurve contract",
+  "issueId": 79,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/79"
+}
