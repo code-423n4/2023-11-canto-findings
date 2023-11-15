@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "sbaudh6",
+  "risk": "2",
+  "title": "Rounding Error in Smart Contract function getNFTMintingPrice() leads to Execute with ZERO Fee .",
+  "issueId": 56,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/56"
+}
