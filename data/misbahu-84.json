@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "misbahu",
+  "risk": "2",
+  "title": "Reentrancy risk in create function of asDFactory.sol",
+  "issueId": 84,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/84"
+}
