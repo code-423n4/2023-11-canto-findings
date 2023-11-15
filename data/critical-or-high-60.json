@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "critical-or-high",
+  "risk": "2",
+  "title": "Hardcoded decimals for the underlying token",
+  "issueId": 60,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/60"
+}
