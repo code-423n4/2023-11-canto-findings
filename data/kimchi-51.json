@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "kimchi",
+  "risk": "3",
+  "title": "Denial of Service through improper implementation for forwarding the _csrRecipient address",
+  "issueId": 51,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/51"
+}
