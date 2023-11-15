@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "emerald7017",
+  "risk": "2",
+  "title": "Lack of Share ID Validation in `Market.getBuyPrice()` and `Market.getSellPrice()` functions.",
+  "issueId": 93,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/93"
+}
