@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "nailkhalimov",
+  "risk": "2",
+  "title": "Divide before multiply in _splitFees() function of Market.sol could make wrong shares fees calculations",
+  "issueId": 45,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/45"
+}
