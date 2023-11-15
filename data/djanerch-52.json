@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "djanerch",
+  "risk": "3",
+  "title": "Risk of reentrancy in buy and sell functions",
+  "issueId": 52,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/52"
+}
