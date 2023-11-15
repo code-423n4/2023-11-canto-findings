@@ -1,0 +1,1 @@
+[L-01] - multiple asD tokens with completely identical parameters but different addresses can be created, potentially tampering with off-chain mechanisms.
