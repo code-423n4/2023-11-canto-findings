@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "nivoa",
+  "risk": "2",
+  "title": "uint256 could store a negative value in _splitFees",
+  "issueId": 101,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/101"
+}
