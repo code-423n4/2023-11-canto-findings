@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "ptsanev",
+  "risk": "3",
+  "title": "asD.sol - cannot burn full amount after max owner withdrawal",
+  "issueId": 82,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/82"
+}
