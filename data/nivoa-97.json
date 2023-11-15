@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "nivoa",
+  "risk": "2",
+  "title": "Function claimHolderFee does not verify _id",
+  "issueId": 97,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/97"
+}
