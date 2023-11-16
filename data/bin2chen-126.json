@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "bin2chen",
+  "risk": "3",
+  "title": "withdrawCarry() uses an incorrect number of digits, which prevents the withdrawal of profits",
+  "issueId": 126,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/126"
+}
