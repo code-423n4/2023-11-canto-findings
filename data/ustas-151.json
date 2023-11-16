@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "ustas",
+  "risk": "2",
+  "title": "Potential DoS in `Market.buy()` due to excessive gas usage in `LinearBondingCurve.getPriceAndFee()`",
+  "issueId": 151,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/151"
+}
