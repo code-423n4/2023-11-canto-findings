@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "0xpiken",
+  "risk": "3",
+  "title": "Sandwich attack could happen due to lack of price protection for `Market#buy()` and `Market#sell()`",
+  "issueId": 112,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/112"
+}
