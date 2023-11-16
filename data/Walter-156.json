@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "Walter",
+  "risk": "2",
+  "title": "safeApprove will revert in certain cases",
+  "issueId": 156,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/156"
+}
