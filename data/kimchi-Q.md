@@ -68,3 +68,19 @@ Correct your comment to the following
 
 ### Affected lines:
 https://github.com/code-423n4/2023-11-canto/blob/main/1155tech-contracts/src/Market.sol#L60
+
+### LOW: Possibility to bypass blocking/exclusion by the owner
+
+### Description:
+The `ShareCreator` can front-run transaction where the owner tries to disable bonding curve from use by calling the 'changeBondingCurveAllowed' function and use function `createNewShare` to create new share with the no yet blocked bonding curve.
+
+A very similar case will be for functions: `restrictShareCreation` - where if there was no restriction and it is going to change, you can create a share just before blocking this possibility, `changeShareCreatorWhitelist` - where if a person was on the whitelist and the owner decided to exclude them, they can still create a share just before being excluded.
+
+### Recommendation:
+Enforce the usage of a private mempool service for all admin actions.
+
+### Affected lines:
+https://github.com/code-423n4/2023-11-canto/blob/main/1155tech-contracts/src/Market.sol#L104-L108
+https://github.com/code-423n4/2023-11-canto/blob/main/1155tech-contracts/src/Market.sol#L114-L127
+https://github.com/code-423n4/2023-11-canto/blob/main/1155tech-contracts/src/Market.sol#L300-L304
+https://github.com/code-423n4/2023-11-canto/blob/main/1155tech-contracts/src/Market.sol#L309-L312
