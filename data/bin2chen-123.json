@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "bin2chen",
+  "risk": "2",
+  "title": "market.sol price can be maliciously increased during buy, or decreased during sale, or subjected to sandwich attacks.",
+  "issueId": 123,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/123"
+}
