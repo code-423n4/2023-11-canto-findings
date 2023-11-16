@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "0x3b",
+  "risk": "2",
+  "title": "Users minting multiple NFTs at e same time have the same fees as one minting 1 at a time.",
+  "issueId": 135,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/135"
+}
