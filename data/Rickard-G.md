@@ -64,3 +64,44 @@ asD/src/asD.sol
 77:            totalSupply();
 ````
 [https://github.com/code-423n4/2023-11-canto/blob/335930cd53cf9a137504a57f1215be52c6d67cb3/asD/src/asD.sol#L75-L77](https://github.com/code-423n4/2023-11-canto/blob/335930cd53cf9a137504a57f1215be52c6d67cb3/asD/src/asD.sol#L75-L77)
+## [G-02] Use assembly for loops to save gas
+### Saves 350 GAS for every iteration from one instance
+Assembly is more gas-efficient for loops. Saves a minimum of 350 GAS per iteration as per remix gas checks.
+````diff
+1155tech-contracts/src/bonding_curve/LinearBondingCurve.sol
+- 20:        for (uint256 i = shareCount; i < shareCount + amount; i++) {
+- 21:            uint256 tokenPrice = priceIncrease * i;
+- 22:            price += tokenPrice;
+- 23:            fee += (getFee(i) * tokenPrice) / 1e18;
+- 24:        }
+
++ assembly {
++     // Initialize i with shareCount
++     let i := shareCount
++ 
++     // Initialize price and fee to zero
++     let price := 0
++     let fee := 0
++ 
++     // Loop start
++     for { } lt(i, add(shareCount, amount)) { } {
++         // Calculate tokenPrice = priceIncrease * i
++         let tokenPrice := mul(priceIncrease, i)
++ 
++         // Update price += tokenPrice
++         price := add(price, tokenPrice)
++ 
++         // Calculate (fee += (getFee(i) * tokenPrice) / 1e18)
++         let feeValue := callvalue(0, getFee, i, 0, 0, 0)
++         let feeTerm := div(mul(feeValue, tokenPrice), 1e18)
++         fee := add(fee, feeTerm)
++ 
++        // Increment i
++         i := add(i, 1)
++     }
++     // Loop end
++ 
++     // Result is stored in price and fee
++ }
+````
+[https://github.com/code-423n4/2023-11-canto/blob/335930cd53cf9a137504a57f1215be52c6d67cb3/1155tech-contracts/src/bonding_curve/LinearBondingCurve.sol#L20-L24](https://github.com/code-423n4/2023-11-canto/blob/335930cd53cf9a137504a57f1215be52c6d67cb3/1155tech-contracts/src/bonding_curve/LinearBondingCurve.sol#L20-L24)
