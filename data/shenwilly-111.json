@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "shenwilly",
+  "risk": "3",
+  "title": "`createNewShare` is vulnerable to DoS griefing",
+  "issueId": 111,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/111"
+}
