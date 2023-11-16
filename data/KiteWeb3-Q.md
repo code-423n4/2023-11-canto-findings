@@ -28,16 +28,34 @@ Remove unused import.
 
 # [L2] - Hardcoded Chain IDs
 # Summary
-The ```asDFactory::constructor``` checks if the current chain ID is 7700 or 7701. Hardcoding chain IDs can lead to issues if the contract is deployed on a different network (or it would be in the future). It would be better to pass the chain ID as a parameter to the constructor or to have a separate function to set it.
+The ```asDFactory::constructor``` and the ```asD::constructor``check if the current chain ID is 7700 or 7701. Hardcoding chain IDs can lead to issues if the contract is deployed on a different network (or it would be in the future). It would be better to pass the chain ID as a parameter to the constructor or to have a separate function to set it.
 
 # Vulnerability
 ```solidity
+//asDFactory.sol
 constructor(address _cNote) {
         cNote = _cNote;
 @>        if (block.chainid == 7700 || block.chainid == 7701) {
             // Register CSR on Canto main- and testnet
             Turnstile turnstile = Turnstile(0xEcf044C5B4b867CFda001101c617eCd347095B44);
             turnstile.register(tx.origin);
+        }
+    }
+
+//asD.sol
+ constructor(
+        string memory _name,
+        string memory _symbol,
+        address _owner,
+        address _cNote,
+        address _csrRecipient
+    ) ERC20(_name, _symbol) {
+        _transferOwnership(_owner);
+        cNote = _cNote;
+@>        if (block.chainid == 7700 || block.chainid == 7701) {
+            // Register CSR on Canto main- and testnet
+            Turnstile turnstile = Turnstile(0xEcf044C5B4b867CFda001101c617eCd347095B44);
+            turnstile.register(_csrRecipient);
         }
     }
 ```
@@ -51,6 +69,7 @@ Manual review
 #Recommendations
 Pass the chain ID as a parameter in the constructor.
 ```diff
+//asDFactory.sol
 + uint256 chainIdMainNet;
 + uint256 chainIdTestNet;
 
@@ -59,10 +78,36 @@ Pass the chain ID as a parameter in the constructor.
         cNote = _cNote;
         chainIdMainNet = _chainIdMainNet;
         chainIdTestNet = _chainIdTestNet;
-        if (block.chainid == chainIdMainNet || block.chainid == chainIdTestNet) {
+-        if (block.chainid == 7700 || block.chainid == 7701) {
++        if (block.chainid == chainIdMainNet || block.chainid == chainIdTestNet) {
             // Register CSR on Canto main- and testnet
             Turnstile turnstile = Turnstile(0xEcf044C5B4b867CFda001101c617eCd347095B44);
             turnstile.register(tx.origin);
+        }
+    }
+
+//asD.sol
++ uint256 chainIdMainNet;
++ uint256 chainIdTestNet;
+
+ constructor(
+        string memory _name,
+        string memory _symbol,
+        address _owner,
+        address _cNote,
+        address _csrRecipient,
++       uint256 _chainIdMainNet, 
++       uint256 _chainIdTestNet
+    ) ERC20(_name, _symbol) {
+        _transferOwnership(_owner);
+        cNote = _cNote;
++       chainIdMainNet = _chainIdMainNet;
++       chainIdTestNet = _chainIdTestNet;
+-        if (block.chainid == 7700 || block.chainid == 7701) {
++        if (block.chainid == chainIdMainNet || block.chainid == chainIdTestNet) {
+            // Register CSR on Canto main- and testnet
+            Turnstile turnstile = Turnstile(0xEcf044C5B4b867CFda001101c617eCd347095B44);
+            turnstile.register(_csrRecipient);
         }
     }
 ```
