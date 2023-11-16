@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "t0x1c",
+  "risk": "3",
+  "title": "Loss of funds due to incorrect calculation in `withdrawCarry()` and `burn()`",
+  "issueId": 105,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/105"
+}
