@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "HChang26",
+  "risk": "2",
+  "title": "`buy()` and `sell()` are prone to MEV attacks",
+  "issueId": 165,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/165"
+}
