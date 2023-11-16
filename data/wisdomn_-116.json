@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "wisdomn_",
+  "risk": "3",
+  "title": "Malicious users can buy more tokens than their approval, allowing them to steal funds.",
+  "issueId": 116,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/116"
+}
