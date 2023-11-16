@@ -46,3 +46,22 @@ G2. getPriceAndFeeChange(): Actually the price can be calculated more straigforw
 
     }
 ```
+
+G3. Slight improvement, by why not? 
+
+[https://github.com/code-423n4/2023-11-canto/blob/335930cd53cf9a137504a57f1215be52c6d67cb3/1155tech-contracts/src/bonding_curve/LinearBondingCurve.sol#L27C5-L36C6](https://github.com/code-423n4/2023-11-canto/blob/335930cd53cf9a137504a57f1215be52c6d67cb3/1155tech-contracts/src/bonding_curve/LinearBondingCurve.sol#L27C5-L36C6)
+
+```diff
+function getFee(uint256 shareCount) public pure override returns (uint256) {
+        uint256 divisor;
+-        if (shareCount > 1) {
++        if (shareCount > 3) {
+
+            divisor = log2(shareCount);
+        } else {
+            divisor = 1;
+        }
+        // 0.1 / log2(shareCount)
+        return 1e17 / divisor;
+    }
+```
