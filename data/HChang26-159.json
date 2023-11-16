@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "HChang26",
+  "risk": "2",
+  "title": "Potential Loss of Rewards Due to Frequent claimHolderFee() Calls",
+  "issueId": 159,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/159"
+}
