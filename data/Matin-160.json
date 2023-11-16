@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "Matin",
+  "risk": "3",
+  "title": "Wrong fee calculation in the contract LinearBondingCurve due to the precision loss in Log2 calculation",
+  "issueId": 160,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/160"
+}
