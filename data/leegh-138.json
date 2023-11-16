@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "leegh",
+  "risk": "3",
+  "title": "Part `buy`/`mintNFT` fee may be locked in the market contract forever.",
+  "issueId": 138,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/138"
+}
