@@ -30,3 +30,9 @@ function sell(uint256 _id, uint256 _amount) external {
         emit SharesSold(_id, msg.sender, _amount, price, fee);
     }
 ```
+
+QA2. asDFactory.create() does not prevent that two asD contracts might have the same name and symbol.
+
+[https://github.com/code-423n4/2023-11-canto/blob/335930cd53cf9a137504a57f1215be52c6d67cb3/asD/src/asDFactory.sol#L33-L38](https://github.com/code-423n4/2023-11-canto/blob/335930cd53cf9a137504a57f1215be52c6d67cb3/asD/src/asDFactory.sol#L33-L38)
+
+
