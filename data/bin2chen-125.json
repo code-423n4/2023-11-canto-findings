@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "bin2chen",
+  "risk": "2",
+  "title": "buy() when allocating fees _tokenCount may be too large causing some fees to be locked",
+  "issueId": 125,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/125"
+}
