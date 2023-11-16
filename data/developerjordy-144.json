@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "developerjordy",
+  "risk": "3",
+  "title": "Market Buy orders are vulnerable for frontrunning, resulting in attacker receiving more NOTE than spent. ",
+  "issueId": 144,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/144"
+}
