@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "ptsanev",
+  "risk": "3",
+  "title": "Market.sol - user is able to generate share holder rewards and manipulate them as a first buyer of shares, draining the contract",
+  "issueId": 155,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/155"
+}
