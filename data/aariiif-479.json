@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "aariiif",
+  "risk": "2",
+  "title": "Unchecked cToken mint in mint() risks imbalance, breaking 1:1 peg reserve backing.",
+  "issueId": 479,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/479"
+}
