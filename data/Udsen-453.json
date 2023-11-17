@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "Udsen",
+  "risk": "2",
+  "title": "THERE IS NO LOGIC IMPLEMENTATION TO REMOVE A MALICIOUS `asD` TOKEN FROM THE `asDFactory.isAsD` MAPPING ",
+  "issueId": 453,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/453"
+}
