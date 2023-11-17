@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "bareli",
+  "risk": "2",
+  "title": "denial of service (DoS) attack on  getPriceAndFee function",
+  "issueId": 280,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/280"
+}
