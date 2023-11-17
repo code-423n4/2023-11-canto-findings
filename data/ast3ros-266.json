@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "ast3ros",
+  "risk": "2",
+  "title": "Inaccuracy in Fee Calculation Due to Rounding in log2 Function",
+  "issueId": 266,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/266"
+}
