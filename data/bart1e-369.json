@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "bart1e",
+  "risk": "3",
+  "title": "`asD::withdrawCarry` assumes wrong number of decimals returned by `exchangeRateCurrent` which will cause owner to not be able to withdraw revenue",
+  "issueId": 369,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/369"
+}
