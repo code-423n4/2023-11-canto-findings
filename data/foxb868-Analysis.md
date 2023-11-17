@@ -2,7 +2,7 @@
 
 The system consists of two main components - asD for creating application specific stablecoins, and 1155tech for creating tokenized bonding curves with social tokens.
 
-## Summarizing the architecture of my analysis:
+## Summarizing the architecture.
 
 | Component | Purpose | Contracts/Functions | Security Analysis | Recommendations |
 | --- | --- | --- | --- | --- |
@@ -471,6 +471,8 @@ asD provides a simple interface for generating ERC20 tokens pegged 1:1 to NOTE. 
 - Timelocks for admin functions
 - Formal verification of core math
 - Increase test coverage
+
+
 
 
 
