@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "0xAadi",
+  "risk": "2",
+  "title": "Potential Out of Gas Error in Buy, Sell, MintNFT, and BurnNFT Operations Due to `getPriceAndFee()` Function in LinearBondingCurve Contract",
+  "issueId": 489,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/489"
+}
