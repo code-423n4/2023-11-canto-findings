@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "JayShreeRAM",
+  "risk": "3",
+  "title": "Incorrect Withdrawal Calculation in withdrawCarry Function",
+  "issueId": 305,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/305"
+}
