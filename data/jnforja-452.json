@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "jnforja",
+  "risk": "2",
+  "title": "Lack of slippage controls allows for users of Market spend more or receive less tokens than expected and leaves them vulnerable to sandwich attacks in blockchains that allow transactions reordering",
+  "issueId": 452,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/452"
+}
