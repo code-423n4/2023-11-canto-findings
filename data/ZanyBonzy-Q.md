@@ -9,4 +9,12 @@ asD.sol [[L35]](https://github.com/code-423n4/2023-11-canto/blob/335930cd53cf9a1
 _transferOwnership(_owner);
 ```
 
-### 3. P
+### 3. Possible loss of precision 
+LinearBondingCurve.sol [23](https://github.com/code-423n4/2023-11-canto/blob/516099801101950ac9e1117a70e095b06f9bf6a1/1155tech-contracts/src/bonding_curve/LinearBondingCurve.sol#L23), [35](https://github.com/code-423n4/2023-11-canto/blob/516099801101950ac9e1117a70e095b06f9bf6a1/1155tech-contracts/src/bonding_curve/LinearBondingCurve.sol#L35)
+
+```
+            fee += (getFee(i) * tokenPrice) / 1e18;
+```
+```
+        return 1e17 / divisor;
+```
