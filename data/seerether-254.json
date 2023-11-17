@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "seerether",
+  "risk": "3",
+  "title": "Vulnerability in the fee splitting logic of the Market contract that could allow manipulations of balances.",
+  "issueId": 254,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/254"
+}
