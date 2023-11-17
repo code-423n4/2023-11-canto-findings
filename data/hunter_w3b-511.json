@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "hunter_w3b",
+  "risk": "2",
+  "title": " Pricing inconsistencies introduced via rounding/truncation errors",
+  "issueId": 511,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/511"
+}
