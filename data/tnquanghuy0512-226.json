@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "tnquanghuy0512",
+  "risk": "3",
+  "title": "No slippage protection in Market contract lead to sandwich attack",
+  "issueId": 226,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/226"
+}
