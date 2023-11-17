@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "mojito_auditor",
+  "risk": "3",
+  "title": "A portion of the fee during buying is locked in the contract forever",
+  "issueId": 337,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/337"
+}
