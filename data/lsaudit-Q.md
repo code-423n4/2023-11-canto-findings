@@ -167,3 +167,44 @@ For the code readability - the return code should be checked in the same way as 
 
 There should be comma after `i.e.` - `i.e.,` - [reference](https://english.stackexchange.com/a/16215)
 
+# [N-05] Use constants instead of hard-coded numbers
+
+
+Using constant instead of hard-coded numbers (such as: 1e28, 1e17, 1e18, 10_000), will improve code readability.
+
+
+[File: asD.sol](https://github.com/code-423n4/2023-11-canto/blob/335930cd53cf9a137504a57f1215be52c6d67cb3/asD/src/asD.sol#L76)
+```
+1e28 - 
+```
+
+[File: LinearBondingCurve.sol](https://github.com/code-423n4/2023-11-canto/blob/335930cd53cf9a137504a57f1215be52c6d67cb3/1155tech-contracts/src/bonding_curve/LinearBondingCurve.sol#L23)
+```
+fee += (getFee(i) * tokenPrice) / 1e18;
+```
+
+[File: LinearBondingCurve.sol](https://github.com/code-423n4/2023-11-canto/blob/335930cd53cf9a137504a57f1215be52c6d67cb3/1155tech-contracts/src/bonding_curve/LinearBondingCurve.sol#L35)
+```
+ return 1e17 / divisor;
+```
+
+[File: Market.sol](https://github.com/code-423n4/2023-11-canto/blob/335930cd53cf9a137504a57f1215be52c6d67cb3/1155tech-contracts/src/Market.sol#L276)
+```
+1e18;
+```
+
+[File: Market.sol](https://github.com/code-423n4/2023-11-canto/blob/335930cd53cf9a137504a57f1215be52c6d67cb3/1155tech-contracts/src/Market.sol#L290)
+```
+shareData[_id].shareHolderRewardsPerTokenScaled += (shareHolderFee * 1e18) / _tokenCount;
+```
+
+[File: Market.sol](https://github.com/code-423n4/2023-11-canto/blob/335930cd53cf9a137504a57f1215be52c6d67cb3/1155tech-contracts/src/Market.sol#L197)
+```
+fee = (priceForOne * _amount * NFT_FEE_BPS) / 10_000;
+```
+
+[File: Market.sol](https://github.com/code-423n4/2023-11-canto/blob/335930cd53cf9a137504a57f1215be52c6d67cb3/1155tech-contracts/src/Market.sol#L285-L286)
+```
+        uint256 shareHolderFee = (_fee * HOLDER_CUT_BPS) / 10_000;
+        uint256 shareCreatorFee = (_fee * CREATOR_CUT_BPS) / 10_000;
+```
