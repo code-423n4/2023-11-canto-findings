@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "ether_sky",
+  "risk": "3",
+  "title": "The owner of the asD token cannot withdraw carry due to an incorrect scale factor.",
+  "issueId": 256,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/256"
+}
