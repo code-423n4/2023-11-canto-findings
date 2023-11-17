@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "Madalad",
+  "risk": "3",
+  "title": "Users stand to lose a considerable amount of funds each time they call `buy()` or `sell()`",
+  "issueId": 446,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/446"
+}
