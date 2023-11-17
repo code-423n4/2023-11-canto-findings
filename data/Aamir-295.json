@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "Aamir",
+  "risk": "3",
+  "title": "`asD::mint()` function doesn't take in consideration the volatile nature of `cNOTE` token exchange Rate which will lead to the loss of tokens.",
+  "issueId": 295,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/295"
+}
