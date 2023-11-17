@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "ether_sky",
+  "risk": "2",
+  "title": "There is an incorrect fee split when a user buys tokens.",
+  "issueId": 223,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/223"
+}
