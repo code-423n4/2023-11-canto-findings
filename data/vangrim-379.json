@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "vangrim",
+  "risk": "3",
+  "title": "Market.sol - Malicious user could perform a sandwich attack on user with the linear bonding curve mechanism",
+  "issueId": 379,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/379"
+}
