@@ -84,3 +84,24 @@ https://github.com/code-423n4/2023-11-canto/blob/main/1155tech-contracts/src/Mar
 https://github.com/code-423n4/2023-11-canto/blob/main/1155tech-contracts/src/Market.sol#L114-L127
 https://github.com/code-423n4/2023-11-canto/blob/main/1155tech-contracts/src/Market.sol#L300-L304
 https://github.com/code-423n4/2023-11-canto/blob/main/1155tech-contracts/src/Market.sol#L309-L312
+
+### Modifier onlyShareCreator() is misleading
+
+### Description:
+The name of the `onlyShareCreator()` modifier suggests that only whitelisted share creators will be allowed to call functions with this modifier. However, this is not the case. The owner() can also call such a function, and any other user can too, if share creation is not restricted by `shareCreationRestricted`.
+
+```solidity
+    modifier onlyShareCreator() {
+        require(
+            !shareCreationRestricted || whitelistedShareCreators[msg.sender] || msg.sender == owner(),
+            "Not allowed"
+        );
+        _;
+    }
+```
+
+### Recommendation:
+Instead of using a modifier, use an `if` statements in the `createNewShare` function and custom errors, to clearly express your intention.
+
+### Affected lines:
+https://github.com/code-423n4/2023-11-canto/blob/main/1155tech-contracts/src/Market.sol#L80-L86
