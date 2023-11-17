@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "ziyou-",
+  "risk": "2",
+  "title": " \"MintNFT()\" and \"sell()\" functions lack validation checks for the \"_amount\" parameter.",
+  "issueId": 209,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/209"
+}
