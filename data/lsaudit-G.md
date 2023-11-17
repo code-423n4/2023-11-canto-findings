@@ -39,8 +39,8 @@ SafeERC20.safeTransfer(IERC20(CErc20Interface(cNote).underlying()), msg.sender, 
 ## Cache `shareCount + amount` in variable, instead of calculating it on every loop iteration in `getPriceAndFee()`:
 
 ```
-uint256 shareCoundPlusAmount = shareCount + amount;
-for (uint256 i = shareCount; i < shareCoundPlusAmount; i++) {
+uint256 shareCountPlusAmount = shareCount + amount;
+for (uint256 i = shareCount; i < shareCountPlusAmount; i++) {
 ```
 
 
