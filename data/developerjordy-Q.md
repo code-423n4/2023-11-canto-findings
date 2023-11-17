@@ -1,7 +1,6 @@
 [L-01] Centralization risk only authorised wallets can create new shares
 
 ### Severity
-
 **Impact: Medium**, as only Canto allowed addresses can create shares
 **Likelihood**: Low, as it requires malicious owner
 
@@ -18,8 +17,8 @@ It is also recommended to change the `bool` to `uint256`, this reduce gas for st
 
 ### Severity
 
-**Impact: Low**
-**Likelihood**: Low, as share creators probably won't use ultra large strings
+**Impact: Low**, High gas costs or transaction failures.
+**Likelihood: Low**, Uncommon for ultra-large strings to be used.
 
 ### Description
 Using an ultra-large string for the `_shareName` in the `Market::createNewShare`  could lead to several issues, primarily related to gas costs and transaction execution
@@ -28,14 +27,16 @@ Using an ultra-large string for the `_shareName` in the `Market::createNewShare`
 **Limiting String Length**: Implement a check to enforce a maximum length for the `_shareName`.
 
 [L-03] No checks on addresses in `asD::constructor` 
-It is recommended to check the addresses that they are not  `address(0)` 
+Validate that addresses are not `address(0)` to prevent potential issues.
 
 [L-04] No checks on addresses in `asDFactory::constructor` 
-It is recommended to check the addresses that they are not  `address(0)` 
+Validate that addresses are not `address(0)` to prevent potential issues.
 
 [N-01] Missing event after state changes in `Market::changeShareCreatorWhitelist` 
+Emit events after state changes for better transparency and auditability.
 
-[N-02] return value of `safeTransfer` is ignored in `asD::mint` 
+[N-02] return value of `safeTransfer` is ignored in `asD::mint`
+Handle return values properly to ensure transfer success.
 
 [N-03] Using of safeApprove is deprecated in `asD::mint` 
-Use of safeIncreaseAllowance is recommended.
+Use `safeIncreaseAllowance` for better security and standard compliance.
