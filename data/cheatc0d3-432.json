@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "cheatc0d3",
+  "risk": "2",
+  "title": "Operations not following the Checks-Effects-Interactions pattern in `mintNFT` and `burnNFT` functions (MEDIUM)",
+  "issueId": 432,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/432"
+}
