@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "aariiif",
+  "risk": "2",
+  "title": "Unchecked Bonding Curve Lookups in Market validation of _id in buy() and sell() absent.",
+  "issueId": 482,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/482"
+}
