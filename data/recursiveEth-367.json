@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "recursiveEth",
+  "risk": "3",
+  "title": "Improper validation can cause fee error and loss of funds.",
+  "issueId": 367,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/367"
+}
