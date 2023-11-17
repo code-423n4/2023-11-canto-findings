@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "bart1e",
+  "risk": "2",
+  "title": "The logic of `Market::getBuyPrice` and `Market::getSellPrice` is flawed and encourages unhealthy behaviours that will make users lose their money",
+  "issueId": 270,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/270"
+}
