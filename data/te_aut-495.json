@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "te_aut",
+  "risk": "3",
+  "title": "There is potential underflow and overflow issues in arithmetic operations in the _getRewardsSinceLastClaim function",
+  "issueId": 495,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/495"
+}
