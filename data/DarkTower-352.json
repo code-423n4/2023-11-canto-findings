@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "DarkTower",
+  "risk": "3",
+  "title": "`asD.sol::mint` & `asDFactory.sol::create` allows an attacker to mint legitimate `aSD` with counterfeit underlying $NOTE",
+  "issueId": 352,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/352"
+}
