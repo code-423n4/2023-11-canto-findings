@@ -77,6 +77,15 @@ QA7. We need to emit an event for this function:
 
 [https://github.com/code-423n4/2023-11-canto/blob/335930cd53cf9a137504a57f1215be52c6d67cb3/1155tech-contracts/src/Market.sol#L309-L312](https://github.com/code-423n4/2023-11-canto/blob/335930cd53cf9a137504a57f1215be52c6d67cb3/1155tech-contracts/src/Market.sol#L309-L312)
 
+QA8. Both mintNFT() and burnNFT() lacks slippage control for the fee. Note that the fee is not a fixed value, its value depends on shareData[_id].tokenCount.
+
+[https://github.com/code-423n4/2023-11-canto/blob/335930cd53cf9a137504a57f1215be52c6d67cb3/1155tech-contracts/src/Market.sol#L194-L198](https://github.com/code-423n4/2023-11-canto/blob/335930cd53cf9a137504a57f1215be52c6d67cb3/1155tech-contracts/src/Market.sol#L194-L198)
+
+Therefore, if the function is front-run by another buy() and mintNFT() functions, then shareData[_id].tokenCount will increase, and as a result, the fee will increase as well. A user might pay more fee than he expected due to such front-runs. 
+
+Mitigation: 
+Add a slippage control so that the user can control the maximum amount of fee he is willing to pay. 
+ 
 
 
 
