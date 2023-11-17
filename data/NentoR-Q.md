@@ -11,7 +11,7 @@ https://github.com/code-423n4/2023-11-canto/blob/main/1155tech-contracts/src/Mar
 https://github.com/code-423n4/2023-11-canto/blob/main/1155tech-contracts/src/Market.sol#L203
 https://github.com/code-423n4/2023-11-canto/blob/main/1155tech-contracts/src/Market.sol#L226
 
-### [NC-2] claimPlatformFee(), claimCreatorFee(), and claimHolderFee() in Market.sol do not check for 0 amount in Market.sol
+### [NC-2] claimPlatformFee(), claimCreatorFee(), and claimHolderFee() in Market.sol do not check for 0 amount
 
 `claimPlatformFee()`, `claimCreatorFee()`, and `claimHolderFee()` allow you to call them without having any fees accrued. If that's the case, they basically do an empty transfer and emit an event. I would suggest requiring there are rewards before executing.
 
