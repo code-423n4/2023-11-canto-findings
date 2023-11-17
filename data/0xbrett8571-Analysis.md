@@ -446,5 +446,7 @@ Unit tests with high coverage will be crucial for 1155tech. Property-based testi
 
 Overall the architecture is sensible and the implementation seems to follow sound practices. The contracts could benefit from some refactoring, additional protective checks, and security scrutiny but the foundation is strong.
 
+
+
 ### Time spent:
-24 hours
+28 hours
