@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "t0x1c",
+  "risk": "2",
+  "title": "Attacker can sandwich other user's `buy()` order to make immediate profits",
+  "issueId": 218,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/218"
+}
