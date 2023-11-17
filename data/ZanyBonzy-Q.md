@@ -37,3 +37,20 @@ asDFactory.sol [L33](https://github.com/code-423n4/2023-11-canto/blob/335930cd53
 ```
     function create(string memory _name, string memory _symbol) external returns (address) {
 ```
+
+### 5. `getFee` function can be refactored.
+The function checks if `shareCount` > 1 after which it returns 1 as divisor if its not.
+But, log2(2) = 1, so the factor can be improved.
+LinearBondingCurve.sol [L27](https://github.com/code-423n4/2023-11-canto/blob/335930cd53cf9a137504a57f1215be52c6d67cb3/1155tech-contracts/src/bonding_curve/LinearBondingCurve.sol#L27C2-L37C1)
+```
+   function getFee(uint256 shareCount) public pure override returns (uint256) {
+        uint256 divisor;
+        if (shareCount > 2) {
+            divisor = log2(shareCount);
+        } else { 
+            divisor = 1;
+        }
+        // 0.1 / log2(shareCount)
+        return 1e17 / divisor;
+    }
+```
