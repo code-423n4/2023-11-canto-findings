@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "Soul22",
+  "risk": "2",
+  "title": "Users may fail to burn asD tokens if `cNote.redeemUnderlying()` reverts",
+  "issueId": 430,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/430"
+}
