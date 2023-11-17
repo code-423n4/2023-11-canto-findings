@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "spark",
+  "risk": "3",
+  "title": "The Contract Owner will withdraw more token than expected",
+  "issueId": 190,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/190"
+}
