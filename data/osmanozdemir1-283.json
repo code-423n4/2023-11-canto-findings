@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "osmanozdemir1",
+  "risk": "3",
+  "title": "Buying and selling shares in the `Market.sol` is vulnerable to sandwich attacks",
+  "issueId": 283,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/283"
+}
