@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "PENGUN",
+  "risk": "2",
+  "title": "Malicious users can profit from sandwich attacks on the buy function.",
+  "issueId": 316,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/316"
+}
