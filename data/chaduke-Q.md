@@ -94,3 +94,14 @@ QA9: The changeBondingCurveAllowed() will not be able to disable previously boun
 QA10: changeShareCreatorWhitelist() cannot disable existing creators for their already created shares. It can only prevent the creator to create more shares in the future. 
 
 [https://github.com/code-423n4/2023-11-canto/blob/335930cd53cf9a137504a57f1215be52c6d67cb3/1155tech-contracts/src/Market.sol#L309-L312](https://github.com/code-423n4/2023-11-canto/blob/335930cd53cf9a137504a57f1215be52c6d67cb3/1155tech-contracts/src/Market.sol#L309-L312)
+
+QA11: All the four functions buy(), sell(), mintNFT() and burnNFT() calls _splitFees() to split the fees, but when shareData[_id].tokensInCirculation ==0, shareHolderFee will be added to plantformFee. 
+
+[https://github.com/code-423n4/2023-11-canto/blob/335930cd53cf9a137504a57f1215be52c6d67cb3/1155tech-contracts/src/Market.sol#L280-L296](https://github.com/code-423n4/2023-11-canto/blob/335930cd53cf9a137504a57f1215be52c6d67cb3/1155tech-contracts/src/Market.sol#L280-L296)
+
+In this case, a user can front-run these transactions with a buy() to buy a share so that  shareData[_id].tokensInCirculation > 0 and therefore effectively be able to steal all such shareHolderFee. 
+in these situations.
+
+Mitigation: implement a snapshot mechanism for market so that a user can not just suddently buy shares and enjoy rewards immediately. See ERC20Snapshot for an example:
+
+[https://docs.openzeppelin.com/contracts/3.x/api/token/erc20#ERC20Snapshot(https://docs.openzeppelin.com/contracts/3.x/api/token/erc20#ERC20Snapshot)
