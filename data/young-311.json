@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "young",
+  "risk": "3",
+  "title": "`whitelistedBondingCurves` takes effect only in `createNewShare`, and a malicious share can't be stopped",
+  "issueId": 311,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/311"
+}
