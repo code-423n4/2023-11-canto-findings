@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "Bauchibred",
+  "risk": "3",
+  "title": "An attacker can steal honest users funds by sandwiching `Market.sell)`",
+  "issueId": 182,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/182"
+}
