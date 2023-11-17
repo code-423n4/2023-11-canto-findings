@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "Pheonix",
+  "risk": "2",
+  "title": "Malicious User Can Frontrun the transaction to gain profit",
+  "issueId": 296,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/296"
+}
