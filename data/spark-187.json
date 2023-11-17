@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "spark",
+  "risk": "3",
+  "title": "`asD` May Incompatibility with `cToken` due to the exchange rate",
+  "issueId": 187,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/187"
+}
