@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "seerether",
+  "risk": "3",
+  "title": " Owner can withdraw the entire cNOTE balance held by the contract if totalSupply is 0",
+  "issueId": 279,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/279"
+}
