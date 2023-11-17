@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "seerether",
+  "risk": "3",
+  "title": "Allowing partial sells can cause share splitting attacks if fees are proportional. ",
+  "issueId": 229,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/229"
+}
