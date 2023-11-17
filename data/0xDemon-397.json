@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "0xDemon",
+  "risk": "2",
+  "title": "If a user purchases or sells shares in large amounts, it can cause unexpected behavior in the getPriceAndFee function",
+  "issueId": 397,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/397"
+}
