@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "MrPotatoMagic",
+  "risk": "3",
+  "title": "Incorrect fee is returned by getNFTMintingPrice() ",
+  "issueId": 344,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/344"
+}
