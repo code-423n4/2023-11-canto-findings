@@ -87,5 +87,10 @@ Mitigation:
 Add a slippage control so that the user can control the maximum amount of fee he is willing to pay. 
  
 
+QA9: The changeBondingCurveAllowed() will not be able to disable previously boundcurves that have been used in some share creation. It can only used to prevent future share creation to use the curve again. 
 
+[https://github.com/code-423n4/2023-11-canto/blob/335930cd53cf9a137504a57f1215be52c6d67cb3/1155tech-contracts/src/Market.sol#L104-L108](https://github.com/code-423n4/2023-11-canto/blob/335930cd53cf9a137504a57f1215be52c6d67cb3/1155tech-contracts/src/Market.sol#L104-L108)
 
+QA10: changeShareCreatorWhitelist() cannot disable existing creators for their already created shares. It can only prevent the creator to create more shares in the future. 
+
+[https://github.com/code-423n4/2023-11-canto/blob/335930cd53cf9a137504a57f1215be52c6d67cb3/1155tech-contracts/src/Market.sol#L309-L312](https://github.com/code-423n4/2023-11-canto/blob/335930cd53cf9a137504a57f1215be52c6d67cb3/1155tech-contracts/src/Market.sol#L309-L312)
