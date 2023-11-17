@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "foxb868",
+  "risk": "2",
+  "title": "Unchecked `_id` in buy/sell functions enables DoS, disrupting trading, causing availability loss.",
+  "issueId": 255,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/255"
+}
