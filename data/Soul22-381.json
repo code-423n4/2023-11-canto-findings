@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "Soul22",
+  "risk": "3",
+  "title": "The `withdrawCarry()` function always reverts because of an incorrect assumption.",
+  "issueId": 381,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/381"
+}
