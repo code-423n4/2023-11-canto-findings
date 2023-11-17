@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "tourist",
+  "risk": "2",
+  "title": "Unnecessary gas usage on function calls",
+  "issueId": 335,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/335"
+}
