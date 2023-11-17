@@ -5,7 +5,7 @@
 
   - Furthermore, we reviewed the code. We noted how the contracts were divided into two sections and inspected each section carefully. We studied the contracts, tested how the functions behave, and verified that they behave as intended. We then attempted to break the code's functionality by testing out various attack vectors.
   
-  - Finally, we created our reports.
+  - Finally, we created our report.
 
 ***
 
@@ -54,6 +54,8 @@ asD contracts are used to create the `asDs` Application Specific Dollar stableco
 - `asD` is a protocol that allows the permissionless creation of stablecoins that are pegged to 1 NOTE. 
 1155tech is an art protocol that plans to use asD as its currency. It allows for minting of shares with which they can use to mint ERC1155 tokens. The pricing of these shares are based on a linear bonfing curve and fee structure. 
 - The protocol is odd to say the least, but the codebase and architecture seem rigid. To maintain a high level of quality, we recommend mitigating the identified risks and considering the provided advice
+
+
 
 
 
