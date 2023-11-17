@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "Yanchuan",
+  "risk": "2",
+  "title": "Users cannot receive fees for their own, and those fees are locked in the market permanently.",
+  "issueId": 302,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/302"
+}
