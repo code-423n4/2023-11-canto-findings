@@ -1,0 +1,1 @@
+In the `Market` contract's `burnNFT` function, it would be better to check `rewardsSinceLastClaim > 0` before doing the `safeTransfer` to avoid the zero transfer. As external call costs a lot of gas.
