@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "Logical",
+  "risk": "3",
+  "title": "user can buy when there's no bonding curve set",
+  "issueId": 515,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/515"
+}
