@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "emerald7017",
+  "risk": "2",
+  "title": "Reentrancy Vulnerability in asD Mint and Burn Functions.",
+  "issueId": 235,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/235"
+}
