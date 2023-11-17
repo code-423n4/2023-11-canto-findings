@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "John_Femi",
+  "risk": "2",
+  "title": "Not enough check for getPriceAndFee",
+  "issueId": 497,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/497"
+}
