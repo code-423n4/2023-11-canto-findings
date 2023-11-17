@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "ksk2345",
+  "risk": "2",
+  "title": "Missing view function in asD contract, which can impact usability",
+  "issueId": 423,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/423"
+}
