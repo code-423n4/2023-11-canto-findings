@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "Logical",
+  "risk": "3",
+  "title": "Require statement will allow WhitlistedShareCreators to create a share when share Creation is Restricted",
+  "issueId": 510,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/510"
+}
