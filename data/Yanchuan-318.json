@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "Yanchuan",
+  "risk": "3",
+  "title": "Malicious users can exploit a sandwich attack to steal assets.",
+  "issueId": 318,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/318"
+}
