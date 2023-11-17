@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "7ashraf",
+  "risk": "2",
+  "title": "Possible DoS attack on ```withdrawCarry()```",
+  "issueId": 366,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/366"
+}
