@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "Daniel526",
+  "risk": "2",
+  "title": "Lack of Re-entrancy Protection in ERC1155 _mint Operation",
+  "issueId": 406,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/406"
+}
