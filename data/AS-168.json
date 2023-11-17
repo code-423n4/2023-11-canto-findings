@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "AS",
+  "risk": "2",
+  "title": "Token holder fee doesn't be split correctly when a holder of shares is going to buy shares again",
+  "issueId": 168,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/168"
+}
