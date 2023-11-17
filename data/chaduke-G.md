@@ -42,26 +42,42 @@ G2. getPriceAndFeeChange(): Actually the price can be calculated more straigforw
             uint256 tokenPrice = priceIncrease * i;
             fee += getFee(i) * tokenPrice;
         }
-            fee = fee / 1e18;
+         fee = fee / 1e18;
 
     }
 ```
 
-G3. Slight improvement, by why not? 
 
-[https://github.com/code-423n4/2023-11-canto/blob/335930cd53cf9a137504a57f1215be52c6d67cb3/1155tech-contracts/src/bonding_curve/LinearBondingCurve.sol#L27C5-L36C6](https://github.com/code-423n4/2023-11-canto/blob/335930cd53cf9a137504a57f1215be52c6d67cb3/1155tech-contracts/src/bonding_curve/LinearBondingCurve.sol#L27C5-L36C6)
+G3.  LinearBondingCurve: The getFee() function should be changed to getDivisor() as follows: 
 
-```diff
-function getFee(uint256 shareCount) public pure override returns (uint256) {
-        uint256 divisor;
--        if (shareCount > 1) {
-+        if (shareCount > 3) {
-
+```javascript
+  function getDivisor(uint256 shareCount) public pure override returns (uint256 divisor) {
+        if (shareCount > 3) {
             divisor = log2(shareCount);
         } else {
             divisor = 1;
         }
-        // 0.1 / log2(shareCount)
-        return 1e17 / divisor;
+ }
+```
+
+Then, getPriceAndFee() can be simplifed as follows, saving gas and more readable. 
+
+```javascript
+ function getPriceAndFee(uint256 shareCount, uint256 amount)
+        external
+        view
+        override
+        returns (uint256 price, uint256 fee)
+    {
+
+        price = (priceIncrease * shareCount + priceIncease * (shareCount + amount -1)) * amount / 2; 
+
+        for (uint256 i = shareCount; i < shareCount + amount; i++) {
+            tokenPrice = priceIncrease * i;
+            fee += tokenPrice) / (getDivisor(i);
+        }
+         
+        fee = fee / 10;
     }
 ```
+
