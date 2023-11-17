@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "seerether",
+  "risk": "3",
+  "title": "Vulnerability with the lastClaimedValue not being validated.",
+  "issueId": 262,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/262"
+}
