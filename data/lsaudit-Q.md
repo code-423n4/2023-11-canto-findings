@@ -19,7 +19,7 @@ Our recommendation is to verify if asD token with the same name and symbol alrea
 
  # [QA-02] Lack of 0-check in `LinearBondingCurve.sol` in `constructor()`
 
- Whenever contract is deployed with `priceIncrease`, function `getPriceAndFee()` will always return 0.
+ Whenever contract is deployed with `priceIncrease = 0`, function `getPriceAndFee()` will always return 0.
 
 [File: LinearBondingCurve.sol](https://github.com/code-423n4/2023-11-canto/blob/335930cd53cf9a137504a57f1215be52c6d67cb3/1155tech-contracts/src/bonding_curve/LinearBondingCurve.sol#L20)
 ```
