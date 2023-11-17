@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "peanuts",
+  "risk": "3",
+  "title": "Buying shares in Market.sol is prone to sandwich attacks",
+  "issueId": 416,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/416"
+}
