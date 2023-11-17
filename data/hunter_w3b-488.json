@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "hunter_w3b",
+  "risk": "2",
+  "title": "The getPriceAndFee() function performs calculations without implementing reentrancy protection.",
+  "issueId": 488,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/488"
+}
