@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "tnquanghuy0512",
+  "risk": "3",
+  "title": "Design flaw in `Market.buy()` leads to the funds stuck forever",
+  "issueId": 221,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/221"
+}
