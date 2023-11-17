@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "recursiveEth",
+  "risk": "2",
+  "title": "CreateShare can be called at invalid conditions also.",
+  "issueId": 361,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/361"
+}
