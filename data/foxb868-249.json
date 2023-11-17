@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "foxb868",
+  "risk": "2",
+  "title": "Buy() and sell() functions lack validation, enabling imbalance, insolvency, and potential exploits.",
+  "issueId": 249,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/249"
+}
