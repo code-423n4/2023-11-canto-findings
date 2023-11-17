@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "OMEN",
+  "risk": "2",
+  "title": "there's missing check for _metadataURI in createNewShare",
+  "issueId": 465,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/465"
+}
