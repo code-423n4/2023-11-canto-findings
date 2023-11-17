@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "almurhasan",
+  "risk": "2",
+  "title": "Looping over unbounded array can result in a state of DoS",
+  "issueId": 257,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/257"
+}
