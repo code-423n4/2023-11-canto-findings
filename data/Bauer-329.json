@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "Bauer",
+  "risk": "2",
+  "title": "Inadequate Validation in Bonding Curve State Change Operations",
+  "issueId": 329,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/329"
+}
