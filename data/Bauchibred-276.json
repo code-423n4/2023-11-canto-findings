@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "Bauchibred",
+  "risk": "2",
+  "title": "A user could be DOS'd from selling any share tokens of a `share ID` for an indefinite timeframe, potentially forever",
+  "issueId": 276,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/276"
+}
