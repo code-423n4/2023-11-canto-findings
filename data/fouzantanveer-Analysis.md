@@ -14,30 +14,30 @@ The project’s architecture revolves around the Market contract, serving as a h
 1. `Separation of Concerns:`
    - Current State: The Market contract combines ERC1155 implementation, bonding curve logic, and token management, leading to a complex contract structure.
    - Recommendation: Enhance maintainability by adopting a modular approach. Separate distinct functionalities into dedicated contracts, promoting clarity and ease of future modifications.
-   solidity
+   ```solidity
    // Example: Separate ERC1155 implementation
    Contract ShareERC1155 is ERC1155, Ownable2Step {
        // ERC1155 implementation…
-   }
+   }```
    
 2. `Modular Bonding Curve:`
    - Current State: The LinearBondingCurve contract provides a specific bonding curve implementation, limiting flexibility for future curve variations.
    - Recommendation: Introduce a generic interface, `IBondingCurve`, allowing different bonding curve contracts to seamlessly integrate with the Market contract.
-   solidity
+   ```solidity
    // Example: BondingCurve interface
    Interface IBondingCurve {
        Function getPriceAndFee(uint256 shareCount, uint256 amount) external view returns (uint256 price, uint256 fee);
-   }
+   }```
    
 3. `Security Considerations:`
    - Current State: While ownership controls exist, specific functions lack granular access controls.
    - Recommendation: Strengthen security by implementing consistent access controls. Introduce modifiers like `onlyAdmin` to ensure that critical functions are executed only by authorized users or contracts.
-   solidity
+   ```solidity
    // Example: Add access control to specific functions
    Modifier onlyAdmin() {
        Require(msg.sender == admin, “Not authorized”);
        _;
-   }
+   }```
    Function setAdmin(address _newAdmin) external onlyOwner {
        Admin = _newAdmin;
    }
@@ -54,14 +54,14 @@ Upon thorough examination of the codebase, several positive aspects and areas of
 2. `Effective Use of Modifiers:`
    - The `onlyShareCreator` modifier is a commendable implementation to control share creation. It ensures that only authorized addresses, including whitelisted creators and the owner, can create shares.
    - 
-     solidity
+     ```solidity
      Modifier onlyShareCreator() {
          Require(
              !shareCreationRestricted || whitelistedShareCreators[msg.sender] || msg.sender == owner(),
              “Not allowed”
          );
          _;
-     }
+     }```
      
 3. `Precise Event Logging:`
    - Events are logged with relevant information, enhancing the code’s transparency and facilitating easier debugging and analysis.
@@ -136,6 +136,8 @@ Regulatory risks are also relevant, given the evolving nature of the blockchain 
 Scalability risks are inherent in growing projects. As user activity increases, scalability issues may impact the efficiency and cost-effectiveness of transactions. To address this, the project can explore layer 2 scaling solutions, optimize gas usage, and plan for potential upgrades to accommodate increasing user activity effectively.
 Furthermore, the interaction with external protocols, such as the integration with Compound for the `cNOTE` token, introduces risks associated with changes in those protocols or unforeseen issues. To navigate these risks, the project should regularly monitor and adapt to changes in external protocols, consider fallback mechanisms, and maintain open communication channels with the external projects.
 In conclusion, understanding and addressing these systematic risks are critical for ensuring the project’s long-term success and security. By implementing proactive risk mitigation strategies across market dynamics, smart contract vulnerabilities, reliance on oracles, regulatory uncertainties, scalability challenges, and interactions with external protocols, the project can enhance its resilience in the face of potential challenges.
+
+
 
 ### Time spent:
 11 hours
