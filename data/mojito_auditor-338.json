@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "mojito_auditor",
+  "risk": "2",
+  "title": "Sandwich attack when users buy from market",
+  "issueId": 338,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/338"
+}
