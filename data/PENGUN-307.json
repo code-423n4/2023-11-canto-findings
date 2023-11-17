@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "PENGUN",
+  "risk": "2",
+  "title": "If Market.token is token that revert when transfer 0 amount, burnNFT could revert.",
+  "issueId": 307,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/307"
+}
