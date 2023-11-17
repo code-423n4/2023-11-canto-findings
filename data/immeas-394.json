@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "immeas",
+  "risk": "2",
+  "title": "`shareHolder` fees for multiple purchases by the same user are stuck in the `Market` contract",
+  "issueId": 394,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/394"
+}
