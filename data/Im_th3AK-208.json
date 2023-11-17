@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "Im_th3AK",
+  "risk": "2",
+  "title": "Ignored return value of external call in constructor.",
+  "issueId": 208,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/208"
+}
