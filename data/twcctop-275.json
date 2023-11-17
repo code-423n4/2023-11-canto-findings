@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "twcctop",
+  "risk": "3",
+  "title": "Market #`buy` and `sell` is vulnerable to sandwich attack",
+  "issueId": 275,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/275"
+}
