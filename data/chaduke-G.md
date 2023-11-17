@@ -72,12 +72,40 @@ Then, getPriceAndFee() can be simplifed as follows, saving gas and more readable
 
         price = (priceIncrease * shareCount + priceIncease * (shareCount + amount -1)) * amount / 2; 
 
+        uint256 tokenPrice;
         for (uint256 i = shareCount; i < shareCount + amount; i++) {
             tokenPrice = priceIncrease * i;
-            fee += tokenPrice) / (getDivisor(i);
+            fee += tokenPrice / getDivisor(i);
         }
          
         fee = fee / 10;
     }
 ```
 
+G4. The above getPriceAndFee() can further be simplified as follows to save gas based on the idea that: only the first divisor needs to be obtained, and future divisors can be calculated without calling getDivisor(), just add divisor by 1 when i is doubled.
+
+```javascript
+ function getPriceAndFee(uint256 shareCount, uint256 amount)
+        external
+        view
+        override
+        returns (uint256 price, uint256 fee)
+    {
+
+        price = (priceIncrease * shareCount + priceIncease * (shareCount + amount -1)) * amount / 2; 
+        // the right side can be simplified too if necessary
+        
+        uint256 tokenPrice = priceIncrease * shareCount;
+        uint256 divisor = getDivisor(shareCount);
+        uint256 j = shareCount < 1; // the next time that divisor needs to increase by 1
+        fee += tokenPrice / divisor;
+  
+        for (uint256 i = shareCount + 1; i < shareCount + amount; i++) {
+            tokenPrice += priceIncrease; // instead of multipication;
+            if(i == j) {divisor++; j = j < 1;} // time to increase divisor by 1 and double j 
+            fee += tokenPrice / divisor;
+        }
+         
+        fee = fee / 10;
+    }
+```
