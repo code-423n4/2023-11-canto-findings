@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "Daniel526",
+  "risk": "2",
+  "title": "withdrawCarry can be re-entered through multiple external calls potentially draining the contract's funds",
+  "issueId": 399,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/399"
+}
