@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "btk",
+  "risk": "2",
+  "title": "Protocol is will not work on canto due to hardcoded Turnstile address",
+  "issueId": 297,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/297"
+}
