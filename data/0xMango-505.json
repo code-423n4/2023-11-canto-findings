@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "0xMango",
+  "risk": "2",
+  "title": "Possible sandwhich attack whenever a user with a surplus of allowance calls market.buy().",
+  "issueId": 505,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/505"
+}
