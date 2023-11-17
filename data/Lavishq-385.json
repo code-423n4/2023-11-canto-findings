@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "Lavishq",
+  "risk": "2",
+  "title": "Invalid updation of the nested mapping `tokenByAddress` leads to incorrect amount calculation.",
+  "issueId": 385,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/385"
+}
