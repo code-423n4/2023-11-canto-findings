@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "adriro",
+  "risk": "3",
+  "title": "Max withdrawable calculation is incorrect in asD contract",
+  "issueId": 360,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/360"
+}
