@@ -6,7 +6,6 @@
 |-|:-|:-:|
 | [[L&#x2011;01](#l01-preventing-transfers-of-zero)] | Consider preventing transfers of zero amounts to avoid unnecessary gas expenses. | 3 |
 | [[L&#x2011;02](#l02-preventing-unnecessary-emitting-of-event)] | Consider preventing unnecessary emitting of event. | 1 |
-| [[L&#x2011;03](#l03-loop-that-potentially-run-lomg)] | The `getPriceAndFee()` function uses a loop that could potentially run for a very long time if amount is large | 1 |
 
 ### Non-critical Issues
 
@@ -51,20 +50,6 @@ File: 1155tech-contracts/src/Market.sol
 ```
 
 *GitHub*: [266](https://github.com/code-423n4/2023-11-canto/blob/335930cd53cf9a137504a57f1215be52c6d67cb3/1155tech-contracts/src/Market.sol#L266C7-L269C56)
-
-### [L&#x2011;03] The `getPriceAndFee()` function uses a loop that could potentially run for a very long time if amount is large
-
-This could cause a transaction to run out of gas, making it impossible to buy a large number of shares in a single transaction.
-
-*There is 1 instance of this issue:*
-
-```solidity
-File: 1155tech-contracts/src/Market.sol
-
-20:        for (uint256 i = shareCount; i < shareCount + amount; i++) {
-```
-
-*GitHub*: [20](https://github.com/code-423n4/2023-11-canto/blob/335930cd53cf9a137504a57f1215be52c6d67cb3/1155tech-contracts/src/bonding_curve/LinearBondingCurve.sol#L20)
 
 ## Non-critical Issues
 
