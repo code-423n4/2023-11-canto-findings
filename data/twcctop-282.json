@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "twcctop",
+  "risk": "2",
+  "title": "`mintNFT`  will revert  if  caller is  contract and don't  have `onERC1155BatchReceived`",
+  "issueId": 282,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/282"
+}
