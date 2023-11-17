@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "KupiaSec",
+  "risk": "3",
+  "title": "Buying shares can be sandwich-attacked resulting in share buyers to pay more than they anticipate",
+  "issueId": 304,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/304"
+}
