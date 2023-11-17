@@ -109,3 +109,7 @@ G4. The above getPriceAndFee() can further be simplified as follows to save gas 
         fee = fee / 10;
     }
 ```
+
+G5. We should allow the creator to buy shares too since it is an easy get-around anyway. Better to delete the following line to save gas:
+
+[https://github.com/code-423n4/2023-11-canto/blob/335930cd53cf9a137504a57f1215be52c6d67cb3/1155tech-contracts/src/Market.sol#L151](https://github.com/code-423n4/2023-11-canto/blob/335930cd53cf9a137504a57f1215be52c6d67cb3/1155tech-contracts/src/Market.sol#L151)
