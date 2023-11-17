@@ -1,4 +1,10 @@
-Title : addressing potential fee manipulation issues
+There are two quality assurance audit findings:
+
+1. Addressing Potential Fee Manipulation Issues
+2. Ensuring the 1:1 Peg Between asD and NOTE in the asD Contract
+
+
+## Title : addressing potential fee manipulation issues
 ## Impact
 To address potential fee manipulation, especially in scenarios where token distribution is uneven, implementing strategies to ensure fairness and prevent exploitation is crucial. 
 
@@ -65,8 +71,8 @@ Conclusion
 It's important to balance the need to prevent manipulation with the desire to encourage participation and investment . Regular review and adaptation of these strategies will be key to maintaining a fair and robust fee distribution system.
 
 
-
-Title : Ensuring the 1:1 peg between asD and NOTE is maintained in the asD contract, especially when withdrawing accrued interest (carry)
+## Ensuring the 1:1 Peg Between asD and NOTE in the asD Contract
+##Title : Ensuring the 1:1 peg between asD and NOTE is maintained in the asD contract, especially when withdrawing accrued interest (carry)
 
 ## Impact
 To ensure the 1:1 peg between asD and NOTE is maintained in the asD contract, especially when withdrawing accrued interest (carry), we need to implement a mechanism that calculates the maximum amount of interest the owner can withdraw without disrupting this peg. This requires a balance check of the cNOTE (which represents the deposited NOTE in the Canto Lending Market) against the total supply of asD tokens.
