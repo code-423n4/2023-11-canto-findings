@@ -18,3 +18,22 @@ LinearBondingCurve.sol [23](https://github.com/code-423n4/2023-11-canto/blob/516
 ```
         return 1e17 / divisor;
 ```
+### 4. Consider requiring that strings lenght != 0
+Values like name, symbol, or uri can be passed with no entries. IT'd be odd to have a token with no name, no symbol and haveing an empty uri can affect the functionality of the token uri.
+
+Market.sol [L91](https://github.com/code-423n4/2023-11-canto/blob/335930cd53cf9a137504a57f1215be52c6d67cb3/1155tech-contracts/src/Market.sol#L91C1-L91C85), [L114](https://github.com/code-423n4/2023-11-canto/blob/335930cd53cf9a137504a57f1215be52c6d67cb3/1155tech-contracts/src/Market.sol#L114C1-L118C8)
+```
+    constructor(string memory _uri, address _paymentToken) ERC1155(_uri) Ownable() {
+```
+```
+    function createNewShare(
+        string memory _shareName,
+        address _bondingCurve,
+        string memory _metadataURI
+    ) 
+  ```
+
+asDFactory.sol [L33](https://github.com/code-423n4/2023-11-canto/blob/335930cd53cf9a137504a57f1215be52c6d67cb3/asD/src/asDFactory.sol#L32C1-L33C93)
+```
+    function create(string memory _name, string memory _symbol) external returns (address) {
+```
