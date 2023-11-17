@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "young",
+  "risk": "2",
+  "title": "Fees calculated when minting NFT or burning NFT are not the same as buying or selling tokens, this would lead to less fee being calculated.",
+  "issueId": 323,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/323"
+}
