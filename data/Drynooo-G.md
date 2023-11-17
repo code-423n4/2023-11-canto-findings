@@ -1,0 +1,1 @@
+In the MARKET, you can start without transferring FEES to the contract. It is recommended to judge the size of the fee and reward after the reward calculation is finished, and choose whether to transfer the reward-fee to the user or pass in the fee-reward to the contract.
