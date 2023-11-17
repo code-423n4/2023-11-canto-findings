@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "mark0v",
+  "risk": "2",
+  "title": "Inaccurate fee calculation on bonding curve",
+  "issueId": 185,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/185"
+}
