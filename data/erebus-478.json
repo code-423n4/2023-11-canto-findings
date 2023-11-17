@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "erebus",
+  "risk": "3",
+  "title": "Reentrancy leads to minting/burning/buying without paying the correct amount of fees",
+  "issueId": 478,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/478"
+}
