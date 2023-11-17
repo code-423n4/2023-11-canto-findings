@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "0xarno",
+  "risk": "2",
+  "title": "Lack of slippage protection on buying and selling shares causes user to lose funds",
+  "issueId": 395,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/395"
+}
