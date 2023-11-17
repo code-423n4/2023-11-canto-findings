@@ -25,3 +25,11 @@ asDFactory.sol [L24](https://github.com/code-423n4/2023-11-canto/blob/5160998011
 ```
 constructor(address _cNote) {
 ```
+### 3. Upgrade solidity's optimizer
+Make sure Solidity’s optimizer is enabled. It reduces gas costs. If you want to gas optimize for contract deployment then set the optimizer to a lower number. If you want to optimize for run-time gas costs then set the optimizer to a higher number.
+
+[1155tech foundry.toml](https://github.com/code-423n4/2023-11-canto/blob/335930cd53cf9a137504a57f1215be52c6d67cb3/1155tech-contracts/foundry.toml#L5C1-L6C23), [asD foundry.toml](https://github.com/code-423n4/2023-11-canto/blob/335930cd53cf9a137504a57f1215be52c6d67cb3/asD/foundry.toml#L5C1-L6C23)
+```
+optimizer = true
+optimizer_runs = 1_000
+```
