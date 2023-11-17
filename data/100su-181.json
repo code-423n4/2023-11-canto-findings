@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "100su",
+  "risk": "3",
+  "title": "Owner cannot withdraw all interest due to wrong calculation of accrued interest in WithdrwaCarry",
+  "issueId": 181,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/181"
+}
