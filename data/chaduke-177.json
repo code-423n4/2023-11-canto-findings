@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "chaduke",
+  "risk": "2",
+  "title": "The burnNFT() protocol will charge less fee when a user burns one NFT token  at a time (sequentially) instead of burning X tokens at one shot. ",
+  "issueId": 177,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/177"
+}
