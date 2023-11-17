@@ -1,0 +1,8 @@
+{
+  "contest": 306,
+  "handle": "Udsen",
+  "risk": "2",
+  "title": "CURRENT OWNER OF THE `Market.sol` CONTRACT CAN RENOUNCE THE OWNERSHIP AND `DoS` THE `onlyOwner` MODIFIER CONTROLLED FUNCTIONS IN THE `Market.sol` CONTRACT",
+  "issueId": 464,
+  "issueUrl": "https://github.com/code-423n4/2023-11-canto-findings/issues/464"
+}
