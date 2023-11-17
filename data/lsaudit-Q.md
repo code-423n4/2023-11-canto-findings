@@ -208,3 +208,12 @@ fee = (priceForOne * _amount * NFT_FEE_BPS) / 10_000;
         uint256 shareHolderFee = (_fee * HOLDER_CUT_BPS) / 10_000;
         uint256 shareCreatorFee = (_fee * CREATOR_CUT_BPS) / 10_000;
 ```
+
+# [N-06] Incorrect comment in `Market.sol`
+
+[File: Market.sol](https://github.com/code-423n4/2023-11-canto/blob/335930cd53cf9a137504a57f1215be52c6d67cb3/1155tech-contracts/src/Market.sol#L184)
+```
+tokensByAddress[_id][msg.sender] -= _amount; // Would underflow if user did not have enough tokens
+```
+
+"Would underflow" should be changed to "would revert when underflow happens". Current comment might suggest that this might underflow without revert, which is not true.
