@@ -1114,25 +1114,16 @@ Uses Consensys Solidity Metrics:
 -  **Comment Lines:** lines containing single or block comments.
 -  **Complexity Score:** a custom complexity score derived from code statements that are known to introduce code complexity (branches, loops, calls, external interfaces, ...).
 
-![image](https://github.com/code-423n4/2023-11-canto/assets/104318932/673a9361-66d8-4349-b570-5754d2b322cc)
+*For the image provided, please refer to the [original submission](https://github.com/code-423n4/2023-11-canto-findings/issues/514).*
 
-### Market.sol
+### Market.sol:
 
-**function createNewShare()`** - Creates a new share.
+- Function `createNewShare()` - Creates a new share.<br>
+- Function `buy()` - Buy amount of tokens for a given share ID.<br>
+- Function `sell()` - Sell amount of tokens for a given share ID.<br>
+- Function `mint()` / function `burn()`
 
-![image](https://github.com/code-423n4/2023-11-canto/assets/104318932/ccb08eb4-91a1-451c-985a-43f5a348a37b)
-
-**function `buy()`** - Buy amount of tokens for a given share ID.
-
-![image](https://github.com/code-423n4/2023-11-canto/assets/104318932/132b98f1-780a-452b-9703-d6d5c55a9df8)
-
-**function `sell()`** - Sell amount of tokens for a given share ID.
-
-![image](https://github.com/code-423n4/2023-11-canto/assets/104318932/6240af7d-bcca-492d-9d66-e4a590567d47)
-
-**function `mint()` - function `burn()`**
-
-![image](https://github.com/code-423n4/2023-11-canto/assets/104318932/98bde68d-a067-4de6-b968-a45b89666450)
+*For images provided, please refer to the [original submission](https://github.com/code-423n4/2023-11-canto-findings/issues/514).*
 
 ## Test analysis
 
